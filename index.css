@@ -1,0 +1,119 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: none;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.pink { color: #ff007f; }
+.blue { color: #00d4ff; }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenu principal */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff007f;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .profile img {
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .profile img {
+        width: 180px;
+    }
+}
